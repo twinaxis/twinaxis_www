@@ -1,0 +1,36 @@
+# Default Error Document
+ErrorDocument 404 /404.phtml
+
+# Disable Directory Indexing
+Options -Indexes
+
+# Disable viewing of CVS - Entries, Repository, or Root files
+<Files Entries>
+  Deny from All
+</Files>
+<Files Repository>
+  Deny from All
+</Files>
+<Files Root>
+  Deny from All
+</Files>
+
+
+# Disable PHP Short Tags
+<IfModule mod_php4.c>
+#  php_value include_path ".:/home/twinaxis/www/includes"
+#  php_value auto_prepend_file "php_prepend.php"
+  php_flag short_open_tag off
+</IfModule>
+
+
+
+
+# Rewrite URLs (http://httpd.apache.org/docs-2.0/misc/rewriteguide.html)
+RewriteEngine off
+
+# Rewrite URLs that go to steadfast.2y.net
+RewriteCond %{HTTP_HOST} ^steadfast\.2y\.net [NC]
+RewriteRule ^(.*)$       http://steadfast.twinaxis.com/$1 [L,R=301]
+
+

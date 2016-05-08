@@ -1,0 +1,134 @@
+
+/****************************************************************************
+* TwinAxis SplashSite Cascading Style Sheet                                 *
+****************************************************************************/
+
+
+body
+{
+  background-color: black;
+  text-align: center;
+}
+
+.hidden
+{
+  visibility: hidden;
+}
+
+
+
+/****************************************************************************
+* TwinAxis Root Loadup Styles                                               *
+*                                                                           *
+****************************************************************************/
+
+#twinaxissplashenvironment
+{
+  position: relative;
+  width: 650px;
+  height: 490px;
+
+  background-image: url(images/ta_molded.png);
+
+  text-align: left;
+
+  cursor: default;
+}
+
+
+#twinaxissplashenvironment #title
+{
+  position: absolute;
+  top: 20px;
+  right: 60px;
+
+  color: #CCCCCC;
+  font-family: helvetica;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#twinaxissplashenvironment #contentbox,
+#twinaxissplashenvironment #content
+{
+  position: absolute;
+  top: 90px;
+  right: 30px;
+  width: 550px;
+  height: 330px;
+
+  padding: 5px 10px;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: #333333;
+}
+
+#twinaxissplashenvironment #contentbox
+{
+  background-color: black;
+
+  filter: alpha(opacity=65);
+}
+
+#twinaxissplashenvironment #content
+{
+  overflow: hidden;
+
+  color: #00BBDD;
+  font-family: helvetica;
+  font-size: 12px;
+}
+
+#twinaxissplashenvironment #content .header
+{
+  margin-bottom: -8px;
+
+  color: #BBDDDD;
+  font-family: helvetica;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#twinaxissplashenvironment #content .header a
+{
+  color: #BBDDDD;
+}
+
+#twinaxissplashenvironment #content .header a:hover
+{
+  color: #AABBCC;
+}
+
+#twinaxissplashenvironment #content .text
+{
+  margin-left: 20px;
+  margin-right: 20px;
+
+  color: #00BBDD;
+  font-family: helvetica;
+  font-size: 12px;
+}
+
+
+#twinaxissplashenvironment #footer
+{
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+
+  color: #99BBBB;
+  font-family: helvetica;
+  font-size: 11px;
+}
+
+#twinaxissplashenvironment #footer a
+{
+  color: #99BBBB;
+}
+
+#twinaxissplashenvironment #footer a:hover
+{
+  color: #77AA88;
+}
+

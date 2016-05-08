@@ -1,0 +1,167 @@
+
+/****************************************************************************
+* TwinAxis Site Cascading Style Sheet                                       *
+****************************************************************************/
+
+
+.hidden
+{
+  visibility: hidden;
+}
+
+body
+{
+  background-color: black;
+
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+
+
+/****************************************************************************
+* TwinAxis General Site Styles                                              *
+*                                                                           *
+****************************************************************************/
+
+/* Basic Header */
+#twinaxisheader
+{
+  position: relative;
+  height: 100px;
+  min-width: 500px;
+
+  background-image: url(images/ta_header.png);
+
+  text-align: left;
+}
+
+/* header title */
+#twinaxisheader #title
+{
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  width: 460px;
+
+  color: #CCCCCC;
+  font-family: helvetica;
+  font-size: 34px;
+  font-weight: bold;
+
+  text-align: right;
+}
+
+/* header navigation */
+#twinaxisheader #navigation
+{
+  position: absolute;
+  bottom: 30px;
+  right: 70px;
+  width: 460px;
+
+  color: #CCCCCC;
+  font-family: helvetica;
+  font-size: 14px;
+
+  text-align: right;
+}
+#twinaxisheader #navigation a
+{
+  color: #CCCCCC;
+}
+#twinaxisheader #navigation a:hover
+{
+  color: #BBAA99;
+}
+
+
+/* main content box */
+#twinaxiscontentarea
+{
+  margin: 30px 20px 20px;
+}
+
+/* content header */
+#twinaxiscontentarea .header
+{
+  margin-top: 8px;
+  margin-bottom: 0px;
+
+  color: #BBDDDD;
+  font-family: helvetica;
+  font-size: 16px;
+  font-weight: bold;
+}
+#twinaxiscontentarea .header a
+{
+  color: #BBDDDD;
+}
+#twinaxiscontentarea .header a:hover
+{
+  color: #AABBCC;
+}
+
+/* content text */
+#twinaxiscontentarea .text
+{
+  margin-left: 20px;
+  margin-right: 20px;
+
+  color: #00BBDD;
+  font-family: helvetica;
+  font-size: 12px;
+}
+#twinaxiscontentarea .text a
+{
+  color: #88DDEE;
+}
+#twinaxiscontentarea .text a:hover
+{
+  color: #00CCBB;
+}
+
+#twinaxiscontentarea ul
+{
+  margin-left: 20px;
+}
+#twinaxiscontentarea ul li
+{
+  margin-bottom: 5px;
+}
+
+
+/* twinaxis general footer */
+#twinaxisfooter
+{
+  margin: 30px 10px 10px;
+}
+
+#twinaxisfooter .text
+{
+  color: #99BBBB;
+  font-family: helvetica;
+  font-size: 11px;
+}
+#twinaxisfooter .text a
+{
+  color: #99BBBB;
+}
+#twinaxisfooter .text a:hover
+{
+  color: #77AA88;
+}
+
+
+
+
+
+
+
+
+
+.monobold
+{
+  font-family: "courier new", courier, monospace;
+  font-weight: bold;
+}
