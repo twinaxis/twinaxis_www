@@ -1,64 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html 
-     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-     "DTD/xhtml1-strict.dtd">
+---
+layout: default
+---
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-  <title>TwinAxis</title>
-  <link rel="stylesheet" href="ta_splash.css" type="text/css" />
-</head>
-
-<body>
-  <div id="twinaxissplashenvironment">
-
-    <div id="title">
-      TwinAxis
-    </div>
-
-
-    <div class="hidden"><hr /></div>
-
-
-    <div id="contentbox"></div>
-    <div id="content">
-
-      <p class="header">
-        <a href="about.html">About TwinAxis</a>
-      </p>
-      <p class="text">
+<div class="home">
+  <h1 class="page-heading">TwinAxis</h1>
+  <p class="text">
         TwinAxis is a place where everyone knows your name. Well,
         not really. It's a project site. There are lots of stuff
         here. Well, there's some stuff. Argh. Just follow the link.
       </p>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-      <p class="header">
-        <a href="members.html">TwinAxis Members</a>
-      </p>
-      <p class="text">
-        Some of the websites of TwinAxis members.
-      </p>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-      <p class="header">
-        <a href="projects.html">TwinAxis Projects</a>
-      </p>
-      <p class="text">
-        A grand listing of the the available TwinAxis projects.
-      </p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-    </div>
-
-
-    <div class="hidden"><hr /></div>
-
-
-    <div id="footer">
-      Please direct all inquiries to <a href="mailto:webmaster@twinaxis.com">webmaster@twinaxis.com</a>.
-    </div>
-
-  </div>
-</body>
-
-</html>
+</div>
